@@ -98,10 +98,13 @@ function addMember(){
                 intern.push(new Intern(name, id, email, school));
                 if(nextEntery){
                     return addMember();
+                }else{
+                    createdFile();
                 }
             })
         }
     })
+    
 }
 
 // fs.writeFile('./output/index.html', GenerateHTML(employeesArr), function (err) {
@@ -110,9 +113,9 @@ function addMember(){
 // });
     
 // A function to write HTML file
-const createdFile = fileContent => {
+const createdFile = () => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('./output/index.html', fileContent, err => {
+        fs.writeFile('./output/index.html', err => {
             if (err) {
                 reject(err);
 
@@ -124,9 +127,8 @@ const createdFile = fileContent => {
                 message:'File created!'
             })
         })
-        addMember()
 
-.then(fileContent => {
+.then(() => {
     return GenerateHTML(employeesArr)
 })
 .then(pageHTML => {
@@ -135,6 +137,7 @@ const createdFile = fileContent => {
     })
     
 }
+
 
 
 // Function call to initialize app
