@@ -1,14 +1,15 @@
 :root{
-  --font:#ec0f75;
-  --shadow:#ff9bee;
-  --border:#E4C1F9;
-  --background1:#ec0f75;
+  --font:#0baea5;
+  --shadow:#a6ff9b;
+  --border:#f9c1ed;
+  --background1:#167d82;
   --background2:#ffffff;
 
 }
 body{
   color: var(--font);
-  background-color: #fbedfa;
+  background-color:var(--background1);
+  font-size: 20px;
 }
 
 .header-title{
@@ -31,8 +32,6 @@ body{
     background-color: var(--background2);
     border-radius: 5px;
     padding: 10px;;
-
-
   }
   .card-header h2{
     margin: 0;
@@ -40,7 +39,9 @@ body{
   .card-column:hover{
     box-shadow: 5px 0px 8px  var(--shadow),  0 0 8px  var(--shadow);
   }
-  
+  a:hover{
+    box-shadow: 5px 0px 8px  var(--shadow),  0 0 8px  var(--shadow);
+  }
   .card {
     border: 3px solid var(--border);
     border-radius: 10px;
@@ -50,4 +51,24 @@ body{
     text-align: center;
     min-width: 15em;
   }
-  
+  .card-body{
+    padding:0 10px 0;
+    text-align: left;
+    color: var(--background2);
+  }
+  .e-ID,
+  .email,
+  .office-no,
+  .github,
+  .school{
+    border-bottom: 1px solid;
+    
+  }
+  a{
+    color: var(--background2);
+    border-radius: 5px;
+    padding:0 10px 0;
+  }
+  .bold{
+    font-weight: 600;
+  }

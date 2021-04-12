@@ -57,6 +57,8 @@ function addMember(){
                 manager.push(new Manager(name, id, email, office));
                 if(nextEntery){
                     return addMember();
+                }else{
+                    generateFile();
                 }
             })
 
@@ -78,6 +80,8 @@ function addMember(){
                 engineer.push(new Engineer(name, id, email, github));
                 if(nextEntery){
                     return addMember();
+                }else{
+                    generateFile();
                 }
             })
         } else if (role === 'Intern'){
@@ -99,7 +103,7 @@ function addMember(){
                 if(nextEntery){
                     return addMember();
                 }else{
-                    createdFile();
+                    generateFile();
                 }
             })
         }
@@ -107,36 +111,40 @@ function addMember(){
     
 }
 
-// fs.writeFile('./output/index.html', GenerateHTML(employeesArr), function (err) {
-//     if (err) throw err;
-//     console.log('File is created successfully.');
-// });
+const generateFile = () => {
+    // employeesArr.push(manager,engineer,intern).join('');
+    console.log(employeesArr);
+fs.writeFile('./output/index.html', GenerateHTML(employeesArr), function (err) {
+    if (err) throw err;
+    console.log('File is created successfully.');
+});
+}
     
 // A function to write HTML file
-const createdFile = () => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./output/index.html', err => {
-            if (err) {
-                reject(err);
+// const createdFile = () => {
+//     return new Promise((resolve, reject) => {
+//         fs.writeFile('./output/index.html', err => {
+//             if (err) {
+//                 reject(err);
 
-                return;
-            }
+//                 return;
+//             }
 
-            resolve({
-                ok: true,
-                message:'File created!'
-            })
-        })
+//             resolve({
+//                 ok: true,
+//                 message:'File created!'
+//             })
+//         })
 
-.then(() => {
-    return GenerateHTML(employeesArr)
-})
-.then(pageHTML => {
-    return createdFile(pageHTML)
-});
-    })
+// .then(() => {
+//     return GenerateHTML(employeesArr)
+// })
+// .then(pageHTML => {
+//     return createdFile(pageHTML)
+// });
+//     })
     
-}
+// }
 
 
 

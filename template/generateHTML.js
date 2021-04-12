@@ -10,7 +10,7 @@ const generateCards = teamInfo => {
             <div class="card-body">
                 <p class="e-ID">ID: ${job.id}</p>
                 <p class="email">Email: <a href="mailto:${job.email}">${job.email}</a></p>
-                <p class="office-no">Office Number: ${job.office}</p>
+                <p class="office-no">Office Number: ${job.officeNum}</p>
             </div> 
         </div>
         `
@@ -27,7 +27,7 @@ const generateCards = teamInfo => {
         <div class="card-body">
                 <p class="e-ID">ID: ${job.id}</p>
                 <p class="email">Email: <a href="mailto:${job.email}">${job.email}</a></p>
-                <p class="github">GitHub Username: <a href="https://github.com/${job.github}" target="_blank" rel="noopener noreferrer">${job.github}</a></p>
+                <p class="github">GitHub Username: <a href="https://github.com/${job.gitHub}" target="_blank" rel="noopener noreferrer">${job.gitHub}</a></p>
             </div> 
         </div>
         `
@@ -50,7 +50,10 @@ const generateCards = teamInfo => {
         `
         return interHtml
     })
-    return [manager,engineer,intern]
+   
+    let employee = [manager,engineer,intern];
+    return employee.join('');
+
 }
 
 module.exports = templateInfo => {
