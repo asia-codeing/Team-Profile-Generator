@@ -8,7 +8,7 @@ Command-line application that takes in information about employees on a software
   * [Installation](#installation)
   * [Usage](#usage)
   * [Walkthrough-Video](#walkthrough-video)
-  * [README-Sample](#readme-sample)
+  * [HTML-Sample](#html-sample)
   * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
@@ -18,6 +18,7 @@ Command-line application that takes in information about employees on a software
   We need to make sure that our repo contain `package.json` with the required dependencies to get these files we need to apply the following commands:
   * ``` npm init ``` to install the package.json.
   * ``` npm install inquirer ``` to install the inquirer package. 
+  * ``` npm i jest -D ``` to install jest packagefor testing
 
   ## Usage:
   * open the terminal.
