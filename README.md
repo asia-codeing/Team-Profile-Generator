@@ -18,15 +18,15 @@ Command-line application that takes in information about employees on a software
   We need to make sure that our repo contain `package.json` with the required dependencies to get these files we need to apply the following commands:
   * ``` npm init ``` to install the package.json.
   * ``` npm install inquirer ``` to install the inquirer package. 
-  * ``` npm i jest -D ``` to install jest packagefor testing
+  * ``` npm i jest -D ``` to install jest package for testing.
 
   ## Usage:
-  
+
   ### To run the test:
   * open the terminal.
   * make sure you are in the right directory.
   * Run: ``` npm i ```
-  in the command line type like the command bellow: 
+  * In the command line type like the command bellow: 
 
   ```
   npm run test  
@@ -38,7 +38,7 @@ Command-line application that takes in information about employees on a software
   ### To run the app:
   * open the terminal.
   * make sure you are in the right directory.
-  in the command line type node followed by the name of the file, like the command bellow: 
+  * In the command line type node followed by the name of the file, like the command bellow: 
 
   ```
   node index.js  
