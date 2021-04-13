@@ -21,6 +21,21 @@ Command-line application that takes in information about employees on a software
   * ``` npm i jest -D ``` to install jest packagefor testing
 
   ## Usage:
+  
+  ### To run the test:
+  * open the terminal.
+  * make sure you are in the right directory.
+  * Run: ``` npm i ```
+  in the command line type like the command bellow: 
+
+  ```
+  npm run test  
+  ```
+  * Your tests will runs. 
+  * After that you will see our tests get passed.
+
+
+  ### To run the app:
   * open the terminal.
   * make sure you are in the right directory.
   in the command line type node followed by the name of the file, like the command bellow: 
@@ -30,6 +45,7 @@ Command-line application that takes in information about employees on a software
   ```
   * you will get series of questions you need to answer them. 
   * After answering the questions you will get sucsess message and the HTML file that get generated.
+
 
   ## Walkthrough Video:
   Check this video that demonstrates the functionality of the application:<br />
