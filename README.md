@@ -28,7 +28,7 @@ Command-line application that takes in information about employees on a software
   node index.js  
   ```
   * you will get series of questions you need to answer them. 
-  * After answering the questions you will get sucsess message and the README file that get generated and it will give you the path to that file .
+  * After answering the questions you will get sucsess message and the HTML file that get generated.
 
   ## Walkthrough Video:
   Check this video that demonstrates the functionality of the application:<br />
@@ -45,6 +45,7 @@ Command-line application that takes in information about employees on a software
   Contributions are accepted. Feel free to fork.
  
   ## Tests:
+  
   Jest
 
   ## Questions:
