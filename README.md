@@ -34,7 +34,7 @@ Command-line application that takes in information about employees on a software
   * Your tests will runs. 
   * After that you will see our tests get passed.
 
-
+  ---
   ### To run the app:
   * open the terminal.
   * make sure you are in the right directory.
